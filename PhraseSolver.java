@@ -36,7 +36,6 @@ public class PhraseSolver
 
       /* your code here - game logic */
 
-
       /* your code here - determine how game ends */
       solved = true;
     }

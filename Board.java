@@ -19,8 +19,8 @@ public class  Board
     setLetterValue();
     System.out.println("Phrase: " + phrase); //temp test code
     System.out.println("SolvedPhrase: " + solvedPhrase);
-
   }
+  
   /* your code here - accessor(s) */
 
   /* your code here - mutator(s)  */

@@ -18,6 +18,7 @@ public class Player
     System.out.println("Welcome to the game, " + name);
     score = 0;
   }
+  
   /* your code here - accessor(s) */
   Player(String inputName) {
     name = inputName;
