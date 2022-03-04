@@ -20,9 +20,17 @@ public class  Board
     System.out.println("Phrase: " + phrase); //temp test code
     System.out.println("SolvedPhrase: " + solvedPhrase);
   }
-  
-  /* your code here - accessor(s) */
 
+  /* your code here - accessor(s) */
+  public int getLetterValue(){
+    //incomplete
+    return 0;
+  }
+
+  public String getSolvedPhrase(){
+    //incomplete
+    return null;
+  }
   /* your code here - mutator(s)  */
 
 
@@ -89,24 +97,37 @@ public class  Board
     return tempPhrase;
   }
 
+
+  /*
+    Compares the characters in phrase to the guess characters
+      Precondition: phrase and solvedPhrase must be populated, guess must exist
+      Postcondition: Returned a boolean to indicated end of turn status, update solvedPhrase
+      to indicate guess letters if applicable.
+
+  */
   public boolean guessLetter(String guess)
   {
-    boolean foundLetter = false;
-    String newSolvedPhrase = "";
+    boolean foundLetter = false; // initializing foundLetter to false
+    String newSolvedPhrase = ""; // instantiating newSolvedPhrase to an empty String
 
+    // loops through each character in the phrase
     for (int i = 0; i < phrase.length(); i++)
     {
+      // compares each letter to Guess
       if (phrase.substring(i, i + 1).equals(guess))
       {
+        //add the guess character and a space to newSolvedPhrase
         newSolvedPhrase += guess + " ";
+        //sets foundLetter to true to indicate end of turn status
         foundLetter = true;
       }
       else
       {
+        //add the previous solvedPhrase character and a space to newSolvedPhrase
         newSolvedPhrase += solvedPhrase.substring(i * 2, i * 2 + 1) + " ";
       }
     }
-    solvedPhrase = newSolvedPhrase;
-    return foundLetter;
+    solvedPhrase = newSolvedPhrase; //update solvedPhrase to new current game status
+    return foundLetter; //returning foundLetter boolean to indicate end of turn status
   }
 }

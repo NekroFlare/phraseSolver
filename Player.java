@@ -18,12 +18,30 @@ public class Player
     System.out.println("Welcome to the game, " + name);
     score = 0;
   }
-  
+
   /* your code here - accessor(s) */
   Player(String inputName) {
     name = inputName;
     score = 0;
     System.out.println("Welcome to the game, " + name);
   }
+
+  public String getName(){
+    //incomplete
+    return null;
+  }
+
+  public String getScore(){
+    //incomplete
+    return null;
+  }
   /* your code here - mutator(s) */
+  public void setName(String newName){
+
+  }
+
+  public void setScore(String newScore){
+
+  }
+
 }
