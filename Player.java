@@ -30,8 +30,8 @@ public class Player
     return name;
   }
 
-  public int getScore(){
-    return score;
+  public String getScore(){
+    return str(score);
   }
   /* your code here - mutator(s) */
   public void setName(String newName){
