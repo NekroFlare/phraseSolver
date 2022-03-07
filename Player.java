@@ -27,17 +27,15 @@ public class Player
   }
 
   public String getName(){
-    //incomplete
-    return null;
+    return name;
   }
 
   public String getScore(){
-    //incomplete
-    return null;
+    return score;
   }
   /* your code here - mutator(s) */
   public void setName(String newName){
-
+    
   }
 
   public void setScore(String newScore){

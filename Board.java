@@ -23,13 +23,15 @@ public class  Board
 
   /* your code here - accessor(s) */
   public int getLetterValue(){
-    //incomplete
-    return 0;
+    return currentLetterValue;
   }
 
   public String getSolvedPhrase(){
-    //incomplete
-    return null;
+    return solvedPhrase;
+  }
+
+  public String getPhrase(){
+    return phrase;
   }
   /* your code here - mutator(s)  */
 

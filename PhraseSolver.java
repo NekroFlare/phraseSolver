@@ -33,10 +33,17 @@ public class PhraseSolver
     boolean correct = true;
     while (!solved)
     {
-
       /* your code here - game logic */
-
+      if(currentPlayer == 1) {
+        System.out.println(player1.getName());
+      }
+      else {
+        System.out.println(player2.getName());
+      }
+      System.out.println(game.getSolvedPhrase());
+      System.out.println(game.getLetterValue());
       /* your code here - determine how game ends */
+
       solved = true;
     }
 
