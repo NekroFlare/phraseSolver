@@ -16,6 +16,7 @@ public class  Board
   Board() {
     solvedPhrase = "";
     phrase = loadPhrase();
+
     setLetterValue();
     //System.out.println("Phrase: " + phrase); //temp test code
     //System.out.println("SolvedPhrase: " + solvedPhrase);
