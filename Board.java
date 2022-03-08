@@ -34,8 +34,6 @@ public class  Board
   public String getPhrase(){
     return phrase;
   }
-  /* your code here - mutator(s)  */
-
 
   /* ---------- provided code, do not modify ---------- */
   public void setLetterValue()

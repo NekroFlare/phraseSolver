@@ -19,9 +19,7 @@ public class PhraseSolver
     game = new Board();
     solved = false;
   }
-  /* your code here - accessor(s) */
 
-  /* your code here - mutator(s)  */
 
   public void play()
   {
@@ -34,14 +32,19 @@ public class PhraseSolver
     while (!solved)
     {
       /* your code here - game logic */
+      System.out.println("Phrase: " + game.getSolvedPhrase());
       if(currentPlayer == 1) {
-        System.out.println(player1.getName());
+        System.out.println(player1.getName() + ", guess a letter or phrase");
       }
       else {
-        System.out.println(player2.getName());
+        System.out.println(player2.getName()); + ", guess a letter or phrase"
       }
-      System.out.println(game.getSolvedPhrase());
-      System.out.println(game.getLetterValue());
+
+      System.out.println("Point value for this guess is: " + game.getLetterValue());
+      String currentGuess = input.nextLine();
+      if(currentGuess.length()==1) {
+        correct = game.guessLetter(currentGuess);
+      }
       /* your code here - determine how game ends */
 
       solved = true;

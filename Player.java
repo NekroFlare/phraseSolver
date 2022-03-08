@@ -35,11 +35,11 @@ public class Player
   }
   /* your code here - mutator(s) */
   public void setName(String newName){
-
+    name = newName;
   }
 
   public void setScore(String newScore){
-
+    score = newScore;
   }
 
 }
