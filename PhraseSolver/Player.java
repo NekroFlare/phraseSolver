@@ -26,19 +26,19 @@ public class Player
     System.out.println("Welcome to the game, " + name);
   }
 
-  public String getName(){
+  public String getName() {
     return name;
   }
 
-  public int getScore(){
+  public int getScore() {
     return score;
   }
   /* your code here - mutator(s) */
-  public void setName(String newName){
+  public void setName(String newName) {
     name = newName;
   }
 
-  public void setScore(String newScore){
+  public void setScore(String newScore) {
     score = newScore;
   }
 
