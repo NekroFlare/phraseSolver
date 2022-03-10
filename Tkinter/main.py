@@ -5,7 +5,7 @@ import tkinter as tk
 def test_my_button():
     frame_auth.tkraise()
     user_password = ent_password.get()
-    lbl_auth_password.config(text=user_password + "\nhaha i have you're passwodr", font=('Courier', 20))
+    lbl_auth_password.config(text="\n your password is "+user_password, font=('Courier', 20))
 
 # main window
 root = tk.Tk()
